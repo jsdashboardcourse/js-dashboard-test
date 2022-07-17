@@ -1,0 +1,133 @@
+/* Anime Animation Resets */
+.card-headline1,
+.card-headline2,
+.card-list,
+.card-line-chart-1,
+.card-line-chart-2 {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.card-headline1 {
+  grid-area: headline1;
+}
+
+.card-headline2 {
+  grid-area: headline2;
+}
+
+.card-list {
+  grid-area: list;
+}
+
+.card-line-chart-1 {
+  grid-area: line-chart-1;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 0;
+}
+
+.card-line-chart-2 {
+  grid-area: line-chart-2;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 0;
+}
+
+.card-line-chart-1 .card-h3,
+.card-line-chart-2 .card-h3 {
+  margin-bottom: var(--length-lg1);
+}
+
+/* Leaflet map */
+.card-leaflet-map {
+  grid-area: leaflet-map;
+}
+
+.card-leaflet-h3 {
+  text-align: left;
+}
+
+.card-leaflet-row {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 800px) {
+  .card-leaflet-row {
+    flex-direction: row;
+  }
+}
+
+.card-leaflet-bars {
+  flex: 1 1 auto;
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+  .card-leaflet-bars {
+    width: auto;
+  }
+}
+
+.card-leaflet-map-wrapper {
+  position: relative;
+  overflow: hidden;
+  max-height: 260px;
+  width: 400px;
+}
+
+.card-leaflet-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-leaflet-bar-icon {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.25rem;
+  color: white;
+}
+
+.card-leaflet-bar-label {
+  color: var(--color-label);
+}
+
+.card-leaflet-bar-row.primary .card-leaflet-bar-icon {
+  background: #7440f4;
+}
+
+.card-leaflet-bar-row.accent .card-leaflet-bar-icon {
+  background: #f44176;
+}
+
+.card-leaflet-bar-row.default .card-leaflet-bar-icon {
+  background: var(--color-default);
+}
+
+.card-leaflet-bar-rail {
+  position: relative;
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+  background: var(--color-default);
+}
+
+.card-leaflet-bar-bubble {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: inherit;
+  border-radius: inherit;
+  background: rgba(255, 255, 255, 0.25);
+}

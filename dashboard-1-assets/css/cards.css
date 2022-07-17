@@ -1,0 +1,66 @@
+.card-headline1 {
+  grid-area: headline1;
+}
+
+.card-headline2 {
+  grid-area: headline2;
+}
+
+.card-list {
+  grid-area: list;
+}
+
+.card-radial-bar {
+  grid-area: radialbar;
+}
+
+.card-sparklines {
+  grid-area: sparklines;
+}
+
+.card-bar-chart {
+  grid-area: barchart;
+}
+
+.card-avatar-list {
+  grid-area: avatar-list;
+}
+
+.card-timeline-list {
+  grid-area: timeline-list;
+}
+
+.card-area-chart {
+  grid-area: areachart;
+}
+
+.card-line-chart {
+  grid-area: linechart;
+  min-height: 315px;
+}
+
+@media only screen and (min-width: 600px) {
+  .card-line-chart {
+    min-height: auto;
+  }
+}
+
+.card-line-chart .card-header button {
+  background: var(--color-grey);
+  color: var(--color-text);
+  border: 0;
+  display: inline-grid;
+  place-items: center;
+  height: 2rem;
+  width: 3.5rem;
+  border-radius: 1rem;
+}
+
+.card-line-chart .card-header button.active {
+  background: var(--color-primary);
+  color: var(--color-primary-text);
+}
+
+.card-gauge-chart {
+  grid-area: gaugechart;
+}

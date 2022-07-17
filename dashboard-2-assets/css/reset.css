@@ -1,0 +1,7 @@
+:root {
+  --color-primary: #a740f4;
+  --color-accent: #34ecd7;
+  --color-default: #363636;
+  --animate-duration: 0.9s;
+  --animate-delay: 0.15s;
+}
